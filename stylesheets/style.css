@@ -1,0 +1,23 @@
+body {
+  background-color: hsl(0, 12%, 97%);
+}
+
+#main_form{
+  margin-top: 5em;
+  background-color: #a5b8b6;
+}
+
+label{
+  align-self: center;
+}
+
+.indication_zone{
+  background-color: hsl(0, 12%, 97%);
+  border-radius: 3px;
+  margin: 5em, 10em, 0em, 10em;
+}
+
+.indication{
+  padding: 5px;
+  color: hsl(343, 21%, 26%);
+}
