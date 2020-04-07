@@ -45,8 +45,13 @@ Check points:
 
 - [x] form asking for first name, last name, email and 6 numbers
 - [x] a submitting button
-- [x] the function `const checkLoto = (firstname, lastname, email, lotoNumbers) => {}` (defined at `line 108` called at `line 148`)
+- [x] the function `const checkLoto = (firstname, lastname, email, lotoNumbers) => {}` (defined at `line 104` called at `line 144`)
 - [x] show only ONE message when there is error
 - [x] in case of loss, show the pregenerated numbers
 - [x] email format validation
 - [x] minimum level of CSS
+
+* * *
+Technical description
+
+This page is static. The winning numbers are generated at each submit. The javascript part is done with jquery, with neither framework nor library.

@@ -38,12 +38,11 @@ const checkEmailValid = () => {
                .val())
                .toLowerCase()
     )))
-    )
-  {
+    ) {
     return true ;
   } else {
     $('.indication').addClass('d-none');
-    $('#invalide_email').removeClass('d-none');
+    $('#invalid_email').removeClass('d-none');
     return false ;
   }
 }
@@ -83,7 +82,7 @@ const arraysEqual = (arr1, arr2) => {
 }
 
 // check whether the numbers are winning numbers
-checkIfWinning = (winningNumbers, choices) => { 
+let checkIfWinning = (winningNumbers, choices) => { 
   if (arraysEqual(winningNumbers, choices)) {
     $('#winning_message').removeClass('d-none');
     $('#losing_message').addClass('d-none');
@@ -102,12 +101,12 @@ checkIfWinning = (winningNumbers, choices) => {
 }
 
 // overall function
-checkLoto = (firstname, lastname, email, choices) => {
+let checkLoto = (firstname, lastname, email, choices) => {
   let inputConditions = [
     checkNoEmpty(firstname, $('#empty_firstname')),
     checkNoEmpty(lastname, $('#empty_lastname')),
-    checkNoEmpty(email, $('#empty_email')),
     checkEmailValid(),
+    checkNoEmpty(email, $('#empty_email')),
     checkAllNumbersPresenceAndRange(choices)
   ]
   if (inputConditions.every(inputValid)) {
