@@ -149,4 +149,12 @@ $('#btn-submit').click(() => {
 // between brackets the function is call without brackets
 // and === true is not allowed
 // 2. comparing two arrays or sets aren't fun
-// the most straight forward is to sort then compare one to one
+// the most straight forward is to sort then compare json.to_string
+// 3. spec wants only one errors message
+// in this case it is more efficient to put all verifs in one func
+// 4. may as well just put getUserInputs into a func
+
+// TODO: (after correction)
+// 1. getUserInputs func
+// 2. refacto string comparison
+// 3. refacto random integer generation
